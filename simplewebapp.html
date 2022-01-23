@@ -5,9 +5,33 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="index.css">
     <script src='SimpleCalculation.js'></script>
 </head>
 <body>
-    <h1>Simple WebApp</h1>
+
+    <h1>Expense Tracker</h1>
+    <hr>
+    <h1>Current Balance</h1>
+    <h2 id="balance">0</h2>
+    <h4>Income :
+    <input name="income" onchange="changeInput(this)" type="text"  placeholder="your income">
+    </h4>
+    <h3>Expenses</h3>
+    <table class="styled-table">
+        <th>
+            <td>No.</td>
+            <td>Expense Name</td>
+            <td>Expense Cost</td>
+        </th>
+    </table>
+
 </body>
+<script type="text/javascript">
+    let test = document.querySelector('input[name="income"]');
+    function changeInput(params) {
+        test.textContent = params.value;
+        document.querySelector('h2[id="balance"]').textContent=params.value;
+    }
+</script>
 </html>

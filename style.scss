@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+$base-spacing-unit: 24px;
+$half-spacing-unit: calc($base-spacing-unit / 2);
+
+$color-alpha: #1772FF;
+$color-form-highlight: #EEEEEE;
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+body {
+	padding:$base-spacing-unit;
+	font-family:'Source Sans Pro', sans-serif;
+	margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
+container {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+}
+
+table {
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-radius: 5px;
+    border-collapse: separte;
+    border-spacing: 0;
+    display: table;
+    overflow: auto;
+    width: 100%;
+  }
+  table {
+    thead th {
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        font-size: 0.8em;
+        padding: 5px 10px;
+        vertical-align: bottom;
+      }
+    thead th:first-child {
+        border-top-left-radius: 5px;
+      }
+    thead th:last-child {
+        border-top-right-radius: 5px;
+      }
+    tbody td {
+        border-top: 1px solid gray;
+        padding: 5px 10px;
+        vertical-align: top;
+      }
+    tbody tr:nth-child(2n) {
+        background-color: lightgray;
+      }
+  }
