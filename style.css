@@ -1,23 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
-
-$base-spacing-unit: 24px;
-$half-spacing-unit: calc($base-spacing-unit / 2);
-
-$color-alpha: #1772FF;
-$color-form-highlight: #EEEEEE;
-
-$medium: 959px;
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 *, *:before, *:after {
-	box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
-	padding:$base-spacing-unit;
-	font-family:'Source Sans Pro', sans-serif;
-	margin:0;
+  padding: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
 }
-@media (max-width: $medium) {
+
+@media (max-width: 959px) {
   body {
     background-color: #f7f7f7;
     display: flex;
@@ -28,30 +20,30 @@ body {
     margin: 0;
   }
 }
-
-h1,h2,h3,h4,h5,h6 {
-	margin:0;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even){background-color: #f2f2f2;}
-  
-  tr:hover {background-color: #ddd;}
-  
-  th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-  }
+}
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:hover {
+  background-color: #ddd;
+}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
 }
 
 .inc-exp-container {
@@ -77,6 +69,7 @@ table {
   letter-spacing: 1px;
   margin: 5px 0;
 }
+
 .money-plus {
   color: #2ecc71;
 }
@@ -90,8 +83,8 @@ label {
   margin: 10px 0;
 }
 
-input[type="text"],
-input[type="number"] {
+input[type=text],
+input[type=number] {
   border: 1px solid #dedede;
   border-radius: 2px;
   font-size: 16px;
@@ -99,14 +92,12 @@ input[type="number"] {
   width: 100%;
 }
 
-@media (max-width: $medium){
-  input[type="text"],
-input[type="number"] {
-  display: block;
+@media (max-width: 959px) {
+  input[type=text],
+input[type=number] {
+    display: block;
+  }
 }
-}
-
-
 .button {
   appearance: none;
   background-color: #FAFBFC;
@@ -168,29 +159,25 @@ input[type="number"] {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
-  li {
-    background-color: #fff;
-    box-shadow: var(--box--shadow);
-    color: #333;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  li.plus {
-    border-right: 5px solid #2ecc71;
-  }
-  
-  li.minus {
-    border-right: 5px solid #c0392b;
-  }
-  
-  
-  li:hover .delete-btn {
-    opacity: 1;
-  }
+}
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box--shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+.list li:hover .delete-btn {
+  opacity: 1;
 }
 
-
+/*# sourceMappingURL=style.css.map */
